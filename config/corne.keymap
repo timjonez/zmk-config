@@ -39,13 +39,13 @@
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// | F1 | F2   | F3   | F4     |F5      | F6   |        | HOME    |  7  |  8  |  9  |  /  | BKSP |
-// |    | PLAY | STOP | VOL_DN | VOL_UP | MUTE |        | END     |  4  |  5  |  6  |  *  | -    |
-// | F7 | F8   | F9   | F10    | F11    | F12  |        | DEL     |  1  |  2  |  3  |  .  | +    |
+// | F1   | F2   | F3   | F4     |F5      | F6   |        | HOME    |  7  |  8  |  9  |  /  | BKSP |
+// | SHFT | PLAY | STOP | VOL_DN | VOL_UP | MUTE |        | END     |  4  |  5  |  6  |  *  | -    |
+// | F7   | F8   | F9   | F10    | F11    | F12  |        | DEL     |  1  |  2  |  3  |  .  | +    |
 //                    | GUI    |        | SPC  |        | ENTER   |  0  | NUM |
                         bindings = <
    &kp F1 &kp F2           &kp F3      &kp F4       &kp F5       &kp F6       &kp HOME &kp KP_N7 &kp KP_N8  &kp KP_N9 &kp KP_SLASH    &kp BSPC
-   &trans &kp K_PLAY_PAUSE &kp K_STOP2 &kp K_VOL_DN &kp K_VOL_UP &kp K_MUTE   &kp END  &kp KP_N4 &kp KP_N5  &kp KP_N6 &kp KP_ASTERISK &kp KP_MINUS
+   &kp LSHFT &kp C_PLAY_PAUSE &kp K_STOP2 &kp K_VOL_DN &kp K_VOL_UP &kp K_MUTE   &kp END  &kp KP_N4 &kp KP_N5  &kp KP_N6 &kp KP_ASTERISK &kp KP_MINUS
    &kp F7 &kp F8           &kp F9      &kp F10      &kp F11      &kp F12      &kp DEL  &kp KP_N1 &kp KP_N2  &kp KP_N3 &kp KP_DOT      &kp KP_PLUS
                                        &kp LGUI     &trans       &kp SPACE    &kp RET  &kp KP_N0 &kp KP_NUM
                         >;
