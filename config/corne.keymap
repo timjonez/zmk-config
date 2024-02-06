@@ -40,6 +40,37 @@
             bindings = <&kp H>, <&kp LEFT_ARROW>;
             mods = <(RALT)>;
         };
+        ecopy: e_copy {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp E>, <&kp C_AC_COPY>;
+            mods = <(MOD_LGUI)>;
+        };
+        jpaste: j_paste {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp J>, <&kp C_AC_PASTE>;
+            mods = <(MOD_LGUI)>;
+        };
+        undo: u_undo {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp U>, <&kp C_AC_UNDO>;
+            mods = <(MOD_LGUI)>;
+        };
+        kredo: k_redo {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp K>, <&kp C_AC_REDO>;
+            mods = <(MOD_LGUI)>;
+        };
+        dotsave: dot_save {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DOT>, <&kp LC(S)>;
+            mods = <(MOD_LGUI)>;
+        };
+
     };
 };
 
@@ -55,10 +86,10 @@
 //    | SHFT | ' " |  Q   |  J  |  K  |  X  |     |  B  |  M   |  W   |  V   |  Z  | SHFT ESC |
 //                        | GUI | LWR | SPC |     | ENT | RSE  | ALT  |
                         bindings = <
-   &kp TAB   &kp SEMI &kp COMMA &kp DOT  &kp P &kp Y       &kp F   &kp G   &carrow  &kp R   &kp L &kp BSPC
-   &kp LCTRL &kp A    &kp O     &kp E    &kp U &kp I       &kp D   &harrow &tarrow  &narrow &kp S &kp MINUS
-   &kp LSHFT &kp SQT  &kp Q     &kp J    &kp K &kp X       &kp B   &kp M   &kp W    &kp V   &kp Z &shiftesc
-                                &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2   &kp RALT
+   &kp TAB   &kp SEMI &kp COMMA &dot_save &kp P  &kp Y       &kp F   &kp G   &carrow  &kp R   &kp L &kp BSPC
+   &kp LCTRL &kp A    &kp O     &ecopy    &undo  &kp I       &kp D   &harrow &tarrow  &narrow &kp S &kp MINUS
+   &kp LSHFT &kp SQT  &kp Q     &jpaste   &kredo &kp X       &kp B   &kp M   &kp W    &kp V   &kp Z &shiftesc
+                                &kp LGUI  &mo 1  &kp SPACE   &kp RET &mo 2   &kp RALT
                         >;
                 };
                 lower_layer {
