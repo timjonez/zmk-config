@@ -16,61 +16,6 @@
             bindings = <&kp RSHIFT>, <&kp ESC>;
             mods = <(MOD_LSFT)>;
         };
-        carrow: c_arrow {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp C>, <&kp UP_ARROW>;
-            mods = <(RALT)>;
-        };
-        narrow: n_arrow {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp N>, <&kp RIGHT_ARROW>;
-            mods = <(RALT)>;
-        };
-        tarrow: t_arrow {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp T>, <&kp DOWN_ARROW>;
-            mods = <(RALT)>;
-        };
-        harrow: h_arrow {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp H>, <&kp LEFT_ARROW>;
-            mods = <(RALT)>;
-        };
-        ecopy: e_copy {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp E>, <&kp C_AC_COPY>;
-            mods = <(RCTRL)>;
-        };
-        jpaste: j_paste {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp J>, <&kp C_AC_PASTE>;
-            mods = <(RCTRL)>;
-        };
-        undo: u_undo {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp U>, <&kp C_AC_UNDO>;
-            mods = <(RCTRL)>;
-        };
-        kredo: k_redo {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp K>, <&kp C_AC_REDO>;
-            mods = <(RCTRL)>;
-        };
-        dotsave: dot_save {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp DOT>, <&kp LC(S)>;
-            mods = <(RCTRL)>;
-        };
-
     };
 };
 
@@ -86,10 +31,10 @@
 //    | SHFT | ' " |  Q   |  J  |  K  |  X  |     |  B  |  M   |  W   |  V   |  Z  | SHFT ESC |
 //                        | GUI | LWR | SPC |     | ENT | RSE  | ALT  |
                         bindings = <
-   &kp TAB   &kp SEMI &kp COMMA &dotsave       &kp P  &kp Y       &kp F   &kp G   &carrow  &kp R   &kp L &kp BSPC
-   &kp LCTRL &kp A    &kp O     &ecopy         &undo  &kp I       &kp D   &harrow &tarrow  &narrow &kp S &kp MINUS
-   &kp LSHFT &kp SQT  &kp Q     &jpaste        &kredo &kp X       &kp B   &kp M   &kp W    &kp V   &kp Z &shiftesc
-                                &lt 3 LGUI &mo 1  &kp SPACE   &lt 3 RET &mo 2   &kp RALT
+   &kp TAB   &kp SEMI &kp COMMA &kp DOT    &kp P  &kp Y       &kp F     &kp G  &kp C    &kp R &kp L &kp BSPC
+   &kp LCTRL &kp A    &kp O     &kp E      &kp U  &kp I       &kp D     &kp H  &kp T    &kp N &kp S &kp MINUS
+   &kp LSHFT &kp SQT  &kp Q     &kp J      &kp K  &kp X       &kp B     &kp M  &kp W    &kp V &kp Z &shiftesc
+                                &lt 3 LGUI &mo 1  &kp SPACE   &lt 3 RET &mo 2  &kp RALT
                         >;
                 };
                 lower_layer {
