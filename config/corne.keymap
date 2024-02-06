@@ -89,7 +89,7 @@
    &kp TAB   &kp SEMI &kp COMMA &dotsave       &kp P  &kp Y       &kp F   &kp G   &carrow  &kp R   &kp L &kp BSPC
    &kp LCTRL &kp A    &kp O     &ecopy         &undo  &kp I       &kp D   &harrow &tarrow  &narrow &kp S &kp MINUS
    &kp LSHFT &kp SQT  &kp Q     &jpaste        &kredo &kp X       &kp B   &kp M   &kp W    &kp V   &kp Z &shiftesc
-                                &lt 3 LGUI &mo 1  &kp SPACE   &kp RET &mo 2   &kp RALT
+                                &lt 3 LGUI &mo 1  &kp SPACE   &lt 3 RET &mo 2   &kp RALT
                         >;
                 };
                 lower_layer {
@@ -121,10 +121,10 @@
                 };
                 layer_3 {
                     bindings = <
-    &trans  &trans  &trans  &kp C_AC_SAVE   &trans      &trans    &trans  &trans  &trans  &trans  &trans  &trans
-    &trans  &trans  &trans  &kp C_AC_COPY   &kp K_UNDO  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-    &trans  &trans  &trans  &kp C_AC_PASTE  &kp K_REDO  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                            &trans          &trans      &trans    &trans  &trans  &trans
+    &trans  &trans  &trans  &kp LC(S)       &trans        &trans      &trans  &trans         &kp UP_ARROW   &trans           &trans  &trans
+    &trans  &trans  &trans  &kp C_AC_COPY   &kp LC(Z)     &trans      &trans  &kp LEFT_ARROW &kp DOWN_ARROW &kp RIGHT_ARROW  &trans  &trans
+    &trans  &trans  &trans  &kp C_AC_PASTE  &kp LC(LS(Z)) &trans      &trans  &trans         &trans         &trans           &trans  &trans
+                            &trans          &trans        &kp LGUI    &trans  &trans  &trans
                 >;
             };
         };
