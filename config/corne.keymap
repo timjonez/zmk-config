@@ -69,7 +69,7 @@
     &trans  &trans  &kp LC(SLASH) &kp LC(S)  &trans        &trans      &trans  &trans         &kp UP_ARROW   &trans           &trans  &trans
     &trans  &trans  &trans        &kp LC(C)  &kp LC(Z)     &trans      &trans  &kp LEFT_ARROW &kp DOWN_ARROW &kp RIGHT_ARROW  &trans  &trans
     &trans  &trans  &trans        &kp LC(V)  &kp LC(LS(Z)) &trans      &trans  &trans         &trans         &trans           &trans  &kp RSHIFT
-                                  &trans     &kp BSPC      &kp LGUI    &trans  &trans  &trans
+                                  &kp RALT   &kp BSPC      &kp LGUI    &trans  &trans  &trans
                 >;
             };
         };
