@@ -89,10 +89,10 @@
 
         querty_sym {
             bindings = <
-&kp GRAVE  &kp PRCNT  &kp AMPS   &kp LBRC  &kp RBRC  &kp HASH     &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &kp BSPC
-&kp BSLH   &kp DLLR   &kp QMARK  &kp LPAR  &kp RPAR  &kp EXCL     &kp PLUS    &kp EQUAL     &kp SLASH     &kp PIPE      &kp BSLH      &kp MINUS
-&kp LSHFT  &kp SQT    &kp ASTRK  &kp LBKT  &kp RBKT  &kp AT       &kp UNDER   &kp LT        &kp GT        &kp TILDE     &kp CARET     &kp RSHIFT
-                                 &kp LGUI  &kp BSPC  &kp SPACE    &kp RET     &trans        &kp RALT
+&kp GRAVE  &kp N5        &kp N7     &kp LEFT_BRACKET  &kp RBRC  &kp NUMBER_3    &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &kp BSPC
+&kp BSLH   &kp NUMBER_4  &kp SLASH  &kp N9            &kp N0    &kp NUMBER_1    &kp PLUS    &kp EQUAL     &kp SLASH     &kp PIPE      &kp BSLH      &kp MINUS
+&kp LSHFT  &kp SQT       &kp N8     &kp LBKT          &kp RBKT  &kp NUMBER_2    &kp UNDER   &kp LT        &kp GT        &kp TILDE     &kp CARET     &kp RSHIFT
+                                    &kp LGUI          &kp BSPC  &kp SPACE       &kp RET     &trans        &kp RALT
             >;
         };
 
