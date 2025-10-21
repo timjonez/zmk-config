@@ -24,8 +24,8 @@
     combos {
         compatible = "zmk,combos";
 
-        win {
-            bindings = <&to 4>;
+        toggle_os {
+            bindings = <&tog 4>;
             key-positions = <39 38>;
         };
     };
