@@ -10,7 +10,7 @@
 
 &mt {
     flavor = "tap-preferred";
-    tapping-term-ms = <300>;
+    tapping-term-ms = <150>;
     require-prior-idle-ms = <140>;
 };
 
@@ -47,10 +47,10 @@
             //                        | GUI | LWR | SPC |     | ENT | RSE  | ALT  |
 
             bindings = <
-&kp ESCAPE    &kp SEMI        &kp COMMA       &kp DOT      &kp P        &kp Y        &kp F      &kp G        &kp C        &kp R            &kp L       &kp BSPC
-&kp TAB       &mt LEFT_GUI A  &mt LEFT_ALT O  &mt LSHFT E  &mt LCTRL U  &kp I        &kp D      &mt RCTRL H  &mt RSHFT T  &mt RIGHT_ALT N  &mt RGUI S  &kp MINUS
-&kp CAPSLOCK  &kp SQT         &kp Q           &kp J        &kp K        &kp X        &kp B      &kp M        &kp W        &kp V            &kp Z       &shiftesc
-                                              &lt 5 LGUI   &mo 2        &kp SPACE    &lt 5 RET  &mo 3        &kp RALT
+&kp ESCAPE    &kp SEMI        &kp COMMA       &kp DOT             &kp P             &kp Y        &kp F      &kp G        &kp C        &kp R            &kp L       &kp BSPC
+&kp TAB       &mt LEFT_GUI A  &mt LEFT_ALT O  &mt LEFT_CONTROL E  &mt LEFT_SHIFT U  &kp I        &kp D      &mt RSHFT H  &mt RCTRL T  &mt RIGHT_ALT N  &mt RGUI S  &kp MINUS
+&kp CAPSLOCK  &kp SQT         &kp Q           &kp J               &kp K             &kp X        &kp B      &kp M        &kp W        &kp V            &kp Z       &shiftesc
+                                              &lt 5 LGUI          &mo 2             &kp SPACE    &lt 5 RET  &mo 3        &kp RALT
             >;
         };
 
